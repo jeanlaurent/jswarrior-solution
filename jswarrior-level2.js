@@ -1,3 +1,7 @@
 jsWarrior.turn = function(warrior) {
-	warrior.walk("forward")
-}
+	if (warrior.check() == "enemy") {
+	  warrior.attack()
+	} else {
+	  warrior.walk("forward")
+	}
+  }
